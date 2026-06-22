@@ -149,7 +149,9 @@ class RandomMF(object):
         """
 
         if self.num_y == 1:
-            self.plot_component(figsize=figsize, filename=filename)
+            #self.plot_component(figsize=figsize, filename=filename)
+            #plot_component is missing.(20260622 mk154)
+            self.plot_intensity(figsize=figsize, filename=filename)
         else:
             if figsize is None:
                 plt.figure()
